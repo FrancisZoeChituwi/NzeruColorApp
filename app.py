@@ -1,7 +1,7 @@
 from PIL import Image
 from colorthief import ColorThief
 
-def generate_palette(image_path, num_colors=5):
+def generate_palette(image_path, num_colors=10):
     image = Image.open(image_path)
     image.thumbnail((150, 150))
 
