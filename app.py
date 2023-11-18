@@ -3,7 +3,7 @@ from colorthief import ColorThief
 
 def generate_palette(image_path, num_colors=5):
     image = Image.open(image_path)
-    image.thumbnail((100, 100))
+    image.thumbnail((150, 150))
 
     color_thief = ColorThief(image)
     palette = color_thief.get_palette(color_count=num_colors)
@@ -38,7 +38,7 @@ from colorthief import ColorThief
 
 def generate_palette(image_path, num_colors=5):
     image = Image.open(image_path)
-    image.thumbnail((100, 100))
+    image.thumbnail((150, 150))
 
     color_thief = ColorThief(image)
     palette = color_thief.get_palette(color_count=num_colors)
