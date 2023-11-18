@@ -1,15 +1,12 @@
-from PIL import Image
+from email.mime import image
 from colorthief import ColorThief
 
-def generate_palette(image_path, num_colors=10):
-    image = Image.open(image_path)
-    image.thumbnail((150, 150))
-
-    color_thief = ColorThief(image)
+def generate_palette(image_path, num_colors=5):
+    color_thief = ColorThief(image_path)
     palette = color_thief.get_palette(color_count=num_colors)
 
     return palette
-
+Image = "image"
 def print_palette(palette):
     print("Color Palette:")
     for color in palette:
