@@ -1,7 +1,7 @@
 from email.mime import image
 from colorthief import ColorThief
 
-def generate_palette(image_path, num_colors=5):
+def generate_palette(image_path, num_colors=12):
     color_thief = ColorThief(image_path)
     palette = color_thief.get_palette(color_count=num_colors)
 
